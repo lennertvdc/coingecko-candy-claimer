@@ -1,0 +1,18 @@
+{
+  "name": "coingecko-candy-claimer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Lennert Vandecasteele",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^10.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  }
+}
