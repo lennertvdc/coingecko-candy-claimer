@@ -12,7 +12,7 @@ const cron = require('node-cron');
 		if (process.env.NODE_ENV === 'development') {
 			await scraper.claimCandy(ACCOUNTS[0]);
 		} else {
-			cron.schedule('* * * * *', async () => {
+			cron.schedule('5 2 * * *', async () => {
 				try {
 					await scraper.claimCandy(ACCOUNTS[0])
 				}catch (e) {
