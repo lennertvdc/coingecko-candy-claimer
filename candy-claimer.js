@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 const URL = 'https://www.coingecko.com/account/candy?locale=en';
 const CHROME_OPTIONS = {
 	headless: process.env.NODE_ENV !== 'development',
+	args: ((process.env.NODE_ENV !== 'development') ? ['--no-sandbox', '--disable-setuid-sandbox'] : []),
 	slowMo: 10,
 	devtools: true,
 	defaultViewport: {
